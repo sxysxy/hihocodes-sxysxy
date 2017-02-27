@@ -32,7 +32,7 @@ int query(node *x, int l, int r, int L, int R){
   if(!x)return 0x7fffffff;
   if(l <= L && R <= r)return x->minv;
   int M = (L+R)>>1, ret = 0x7fffffff;
-  if(l <= M)ret = min(ret, query(x->ls, l, r, L, M+1));
+  if(l <= M)ret = min(ret, query(x->ls, l, r, L, M));
   if(r > M)ret = min(ret, query(x->rs, l, r, M+1, R));
   return ret;
 }
