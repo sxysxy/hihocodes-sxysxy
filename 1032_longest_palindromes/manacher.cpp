@@ -1,4 +1,4 @@
-// Also TLE...why?
+// TLE...
 #include <cstdio>
 #include <cstdlib>
 #include <string>

@@ -1,4 +1,4 @@
-//TLE...
+//AC...！
 #include <cstdio>
 #include <cstdlib>
 #include <string>
@@ -42,7 +42,6 @@ inline int find(int x){
 inline void clear(int x){memset(trans[x], 0, sizeof(int)*MAXS);}
 void work(){
   slen = read_string(str);
-  memset(trans, 0, sizeof(int)*(slen+2)*MAXS);
   sum = 1;
   len[0] = 0, len[1] = -1;
   fail[0] = 1;
